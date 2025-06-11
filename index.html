@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmethic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="calculator">
+        <div class="inputbox">
+            <input type="number" placeholder="Enter the First Number :" id="input1" required><button onclick="clearvalue('input1')">Clear</button>
+            <input type="number" placeholder="Enter the Second Number :" id="input2" required><button onclick="clearvalue('input2')">Clear</button>
+        </div>
+
+        <div class="buttonbox">
+            <button class="add-btn" onclick="add()">+</button>
+            <button class="sub-btn" onclick="sub()">-</button>
+            <button class="mul-btn" onclick="mul()">*</button>
+            <button class="div-btn" onclick="div()">/</button>
+        </div>
+
+        <div class="result-btn" id="resultDiv"></div>
+        
+    </div>
+
+
+     <script src="script.js"></script>
+</body>
+</html>
